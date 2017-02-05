@@ -1,0 +1,108 @@
+.page-header {
+  margin-top: 0;
+}
+
+.row {
+  margin-bottom: 12px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    // margin-right:-4px;
+}
+
+.explanations {
+  // height: 122px;
+  div {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.calcView {
+
+  ::-webkit-slider-runnable-track {
+      // border: 2px solid red;
+      // background: green;
+      padding: 12px 0;
+      margin: -4px 0;
+      // height: 20px;
+  }
+
+  ::-ms-track {
+      padding: 12px 0;
+      margin: -4px 0;
+  }
+
+  ::-moz-range-track {
+      // padding: 12px 0;
+      // margin: -4px 0;
+  }
+
+  ::-webkit-slider-thumb {
+      // outline: 20px solid blue;
+      // width: 200px;
+      // height: 20px;
+  }
+
+  #eTicketRow {
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  .adColumn {
+      text-align: center;
+  }
+
+  .shareButton {
+    display: inline-block;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slider {
+    display: inline-block;;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 50%;
+  }
+}
+
+.row#paymentView {
+  div {
+    div {
+      text-align: justify;
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .paymentButtonContainer {
+      text-align: center;
+    }
+  }
+  .smsSample {
+    background-color: lightgray;
+  }
+}
+
+// Very small phones fixes (iPhone 5 and smaller)
+@media (max-width: 320px) {
+  h1 {
+    .subHeader {
+        display: none;
+    }
+  }
+}
